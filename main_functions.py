@@ -6,12 +6,12 @@ from car_model import Car2
 from lane_following import CurvedRoad
 from defines import *
 
-def main2(size,titulo):
+def main2(size,titulo,color):
 
     screen = pygame.display.set_mode(size)
     pygame.display.set_caption(titulo)
     background = pygame.Surface(screen.get_size())
-    background.fill((0, 0, 0))
+    background.fill((color))
 
     # Loop until the user clicks the close button.
     done = False
@@ -25,7 +25,7 @@ def main2(size,titulo):
     car.speed = 100
     # car = laneFollowingCar1()
 
-    screen.fill(WHITE)
+    screen.fill(color)
 
     # -------- Main Program Loop -----------
     t = 0
@@ -75,7 +75,7 @@ def main2(size,titulo):
 
         # First, clear the screen to white. Don't put other drawing commands
         # above this, or they will be erased with this command.
-        screen.fill(WHITE)
+        screen.fill(color)
 
         # --- Game logic and drawing code combined
 
