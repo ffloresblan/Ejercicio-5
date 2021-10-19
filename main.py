@@ -13,4 +13,9 @@ size[0]=ancho
 size[1]=alto
 
 titulo = input("titulo: ")
-main2(size,titulo)
+rojo = int(input("cantidad de rojo: "))
+verde = int(input("cantidad de verde: "))
+azul = int(input("cantidad de azul: "))
+color = (rojo,verde,azul)
+
+main2(size,titulo,color)
